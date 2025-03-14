@@ -12,20 +12,12 @@
         android:layout_height="match_parent"
         tools:context=".MainActivity">
 
-        <include layout="@layout/no_internet_layout"
-            android:id="@+id/noInternet"
-            />
-        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+
+        <WebView
+            android:id="@+id/webView"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:id="@+id/swipeRefresh">
+            android:layout_height="match_parent" />
 
-            <WebView
-                android:id="@+id/webView"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
-
-        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
 
     </RelativeLayout>
 </layout>
